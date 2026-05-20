@@ -1,0 +1,35 @@
+Test Cases - Password Strength Validator
+
+1.
+Input: hello
+Score: 2/6 - Weak
+Missing: length (5 chars), uppercase, digit, special character
+
+2.
+Input: H3llo_World!
+Score: 6/6 - Very Strong
+All requirements satisfied.
+
+3.
+Input: PASSWORD123
+Score: 3/6 - Fair
+Missing: lowercase, special character
+
+4.
+Input: abc def
+Score: 1/6 - Very Weak
+Missing: length, uppercase, digit, special character, no spaces allowed
+
+5.
+Input: Secure#99
+Score: 6/6 - Very Strong
+All requirements satisfied.
+
+6.
+Input: short1A!
+Score: 5/6 - Strong
+Missing: length (7 chars, needs 8)
+
+7.
+Input: q
+Program exits.
